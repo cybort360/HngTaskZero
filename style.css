@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.profile-card {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+[data-testID="profilePicture"] {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+[data-testID="fullname"] {
+  color: black;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+[data-testID="jobtitle"] {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+[data-testID="bio"] {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding: 0 10px;
+}
+
+[data-testID="location"] {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+[data-testID="email"] {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.twitter,
+.github {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+[data-testID="time"] {
+  font-size: 12px;
+  color: #777777;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  [data-testID="profilePicture"] {
+    width: 120px;
+    height: 120px;
+  }
+
+  [data-testID="fullname"] {
+    font-size: 24px;
+  }
+
+  [data-testID="jobtitle"] {
+    font-size: 18px;
+  }
+
+  [data-testID="bio"],
+  [data-testID="location"],
+  [data-testID="email"],
+  .socialLinks a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  [data-testID="profilePicture"] {
+    width: 100px;
+    height: 100px;
+  }
+
+  [data-testID="fullname"] {
+    font-size: 20px;
+  }
+
+  [data-testID="jobtitle"] {
+    font-size: 16px;
+  }
+
+  [data-testID="bio"],
+  [data-testID="location"],
+  [data-testID="email"],
+  .socialLinks a {
+    font-size: 14px;
+  }
+}
